@@ -20,7 +20,7 @@ import java.util.List;
 
 public class CharacterDto {
 
-  @SerializedName("id") private String id;
+  @SerializedName("id") private Integer id;
   @SerializedName("name") private String name;
   @SerializedName("description") private String description;
   @SerializedName("modified") private String modified;
@@ -32,7 +32,7 @@ public class CharacterDto {
   @SerializedName("events") private MarvelResources<EventResourceDto> events;
   @SerializedName("series") private MarvelResources<SerieResourceDto> series;
 
-  public String getId() {
+  public Integer getId() {
     return id;
   }
 

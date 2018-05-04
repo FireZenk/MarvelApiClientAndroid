@@ -18,7 +18,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class ComicDto {
-  @SerializedName("id") private String id;
+  @SerializedName("id") private Integer id;
   @SerializedName("digitalId") private int digitalId;
   @SerializedName("title") private String title;
   @SerializedName("issueNumber") private double issueNumber;
@@ -48,7 +48,7 @@ public class ComicDto {
   @SerializedName("stories") private MarvelResources<StoryResourceDto> stories;
   @SerializedName("events") private MarvelResources<EventResourceDto> events;
 
-  public String getId() {
+  public Integer getId() {
     return id;
   }
 
